@@ -12,7 +12,6 @@ from bs4 import BeautifulSoup
 def sendEmail(row_body, email_address):
     sender_email = "buffolio.bot@gmail.com"
     receiver_email = email_address
-    password = "Asdfghjkl1!"
 
     message = MIMEMultipart("alternative")
     message["Subject"] = "Your Portfolio Report"
