@@ -165,8 +165,8 @@ def getPrice(t):
     response = urllib.request.urlopen(url)
     html = response.read()
     soup = BeautifulSoup(html, 'html.parser')
-    price = float((soup.find('span', {'data-reactid': '14'}).string).replace(',', ''))
-    dailyChange = getSubStringBetweenMarket((soup.find('span', {'data-reactid': '16'}).string))
+    price = float((soup.find('span', {'data-reactid': '32'}).string).replace(',', ''))
+    dailyChange = getSubStringBetweenMarket((soup.find('span', {'data-reactid': '33'}).string))
     return [price, dailyChange]
 
 
